@@ -65,7 +65,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
             // Download a tarball
             let download_url =
-                "https://www.dropbox.com/scl/fi/11cynesm1xdoakii2ypji/mecab-ipadic-2.7.0-20070801-neologd-20200820.tar.gz?rlkey=ekvev29c00hifz8ro92hxyi9d&raw=1";
+                "https://www.dropbox.com/scl/fi/11cynesm1xdoakii2ypji/mecab-ipadic-2.7.0-20070801-neologd-20200820.tar.gz?rlkey=ekvev29c00hifz8ro92hxyi9d&dl=1";
             let resp = ureq::get(download_url).call()?;
             let mut dest = File::create(&tmp_path)?;
 
